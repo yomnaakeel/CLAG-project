@@ -1,0 +1,47 @@
+.opportunities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.opportunity-box {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.opportunity-box:hover {
+    transform: scale(1.05);
+}
+
+.opportunity-box h3 {
+    color: #d63384; /* Pink shade */
+    margin-bottom: 10px;
+}
+
+.opportunity-box p {
+    color: #555;
+    font-size: 16px;
+}
+
+.opportunity-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.opportunity-box a:hover {
+    background-color: #b02a70;
+}
