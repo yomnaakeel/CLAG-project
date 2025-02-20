@@ -1,0 +1,224 @@
+/* Override Bootstrap classes on nav */
+nav.bg-white,
+nav.shadow-sm {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Navbar Styling Override */
+nav {
+  background: linear-gradient(to right, #FFD1B3, #FF6593) !important;
+  padding: 15px 0;
+  margin-bottom: 0; /* Remove any gap between nav and body */
+}
+
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #FFD1B3, #FF6593);
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* (The rest of your CSS remains unchanged) */
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #FFD1B3; /* Slightly lighter peach tone on hover */
+  text-shadow: 0 0 10px #fff;
+}
+
+/* --------------------------------------------------
+   3. HEADER STYLING
+-------------------------------------------------- */
+header {
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  padding: 60px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 15px rgba(255, 101, 147, 0.9);
+  animation: glowHeader 1.5s infinite alternate;
+}
+
+/* --------------------------------------------------
+   4. SECTIONS STYLING
+-------------------------------------------------- */
+section {
+  padding: 50px;
+  margin: 25px auto;
+  max-width: 900px;
+  background: #FFFFFF; /* Keep sections white so text is legible */
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 101, 147, 0.3);
+  transition: transform 0.3s ease-in-out;
+  color: #8F1D4A;
+  font-size: 20px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+/* --------------------------------------------------
+   5. CUSTOM BUTTON STYLING
+-------------------------------------------------- */
+.btn-custom {
+  background: linear-gradient(to right, #FFA6B3, #FF6593) !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  border-radius: 25px !important;
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 15px rgba(255, 166, 179, 0.6) !important;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(to right, #FF6593, #FFA6B3) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 101, 147, 0.9) !important;
+}
+
+/* --------------------------------------------------
+   6. FOOTER STYLING
+-------------------------------------------------- */
+footer {
+  background: #FF6593;
+  padding: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* --------------------------------------------------
+   7. ICON SECTION
+-------------------------------------------------- */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.icon-section img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-section img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 101, 147, 0.8));
+}
+
+/* --------------------------------------------------
+   8. KEYFRAME ANIMATIONS
+-------------------------------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowHeader {
+  from { text-shadow: 2px 2px 15px rgba(255, 101, 147, 0.9); }
+  to { text-shadow: 2px 2px 25px rgba(255, 101, 147, 1); }
+}
+
+/* --------------------------------------------------
+   9. ABOUT US STYLING
+-------------------------------------------------- */
+.about-container {
+  background: #FFFFFF;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 101, 147, 0.3);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-container h2 {
+  color: #FF6593;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.about-container p {
+  color: #C2185B;
+  font-size: 20px;
+}
+
+/* --------------------------------------------------
+   10. CONTACT PAGE STYLING
+-------------------------------------------------- */
+.contact-container {
+  background: #FFFFFF;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 101, 147, 0.3);
+  animation: fadeInUp 1.5s ease-in-out;
+  color: #8F1D4A;
+}
+
+.contact-container h2 {
+  color: #FF6593;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.contact-container p {
+  color: #8F1D4A;
+  font-size: 20px;
+}
+
+/* --------------------------------------------------
+   11. HIGHLIGHTED TEXT
+-------------------------------------------------- */
+::selection {
+  background: #FFD1B3;
+  color: white;
+}
+
+/* --------------------------------------------------
+   12. ACCORDION
+-------------------------------------------------- */
+.accordion-button {
+  background-color: #FF6593;
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #FFA6B3;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #C2185B;
+}
